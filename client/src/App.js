@@ -8,8 +8,8 @@ import Chat from './components/Chat';
 
 const App = () => (
     <Router>
-        <Route path="/" exact component={join}/>
-        <Route path="/chat" component={chat}/>
+        <Route path="/" exact component={Join} />
+        <Route path="/chat" component={Chat} />
     </Router>
 );
 
