@@ -14,7 +14,7 @@ io.on('connection', (socket) => {
     console.log('We have a new connection!!!');
 
     socket.on('disconnect', () => {
-        cosnole.log('User has left')
+        cosnole.log('User had left!!!');
     })
 });
 
