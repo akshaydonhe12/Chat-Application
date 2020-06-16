@@ -66,6 +66,10 @@ html, body {
     font-size: 16px;
     position: relative;
   }
+
+  .button:hover{
+    color: antiquewhite;
+  }
   
   .button::before,.button::after{
     content: "";
