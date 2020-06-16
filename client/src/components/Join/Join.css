@@ -38,6 +38,8 @@ html, body {
     border-bottom: 2px solid white;
   }
   
+
+  /*
   .button {
       color: #fff !important;
       text-transform: uppercase;
@@ -48,7 +50,51 @@ html, body {
       display: inline-block;
       border: none;
       width: 100%;
+  }*/
+
+  
+
+  .button{
+    width: 200px;
+    height: 60px;
+    background: none;
+    border: 4px solid;
+    color: #fc8210;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
   }
+  
+  .button::before,.button::after{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 4px;
+    background: #353b48;
+    transform: skewX(50deg);
+    transition: .4s linear;
+  }
+  
+  .button::before{
+    top: -4px;
+    left: 10%;
+  }
+  
+  .button::after{
+    bottom: -4px;
+    right: 10%;
+  }
+  
+  .button:hover::before{
+    left: 80%;
+  }
+  
+  .button:hover::after{
+    right: 80%;
+  }
+  
   
   .mt-20 {
     margin-top: 20px;
