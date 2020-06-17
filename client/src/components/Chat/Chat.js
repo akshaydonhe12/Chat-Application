@@ -51,7 +51,7 @@ console.log(message, messages);
 return (
       <div className="outerContainer">
           <div className="container">
-            <InfoBar />
+            <InfoBar room= {room} />
 
             {/*<input
              value={message} 
